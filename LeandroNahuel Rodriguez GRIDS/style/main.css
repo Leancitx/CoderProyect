@@ -45,7 +45,11 @@ flex-wrap: wrap;
     height: 300px;
     border-radius: 15px;
 }
-
+card:hover {
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, 4);
+   transform: translateY(3%);
+   background-color: #c2c1c8;
+}
 nav{
 grid-area: nav;
 background-color: rgb(203, 255, 98);
