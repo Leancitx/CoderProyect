@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+section#video{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+    margin: 20px;
+flex-wrap: wrap;
+justify-content: center;
+}
+p h2{
+    font-family: 'Poppins', sans-serif;
+}
+.pVideo{  
+    display: flex;
+width: 50rem;
+margin: 20px;
+background: rgb(34,193,195);
+background: linear-gradient(348deg, rgba(34,193,195,1) 0%, rgba(253,177,45,1) 100%);
+    flex-wrap: wrap;
+justify-content: center;
+}
+
+ul{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+}
+
+li a:hover{
+    background-color: aliceblue;
+    
+}
+.nav-button{
+width: 100%;
+}
+
+
+#grilla{
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: 80px auto;
+    grid-template-areas: 
+    "nav header"
+    "nav main"
+    "footer footer";
+}
+
+header{
+grid-area: header;
+background: rgb(34,193,195);
+background: linear-gradient(348deg, rgba(34,193,195,1) 0%, rgba(253,177,45,1) 100%);
+
+
+}
+h1{
+    margin-top: 1rem;
+    display: flex   ;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center ;
+}
+
+main{
+grid-area: main;
+background: #232526;  
+background: -webkit-linear-gradient(to bottom, #414345, #232526);  
+background: linear-gradient(to bottom, #414345, #232526); 
+}
+
+.container-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 20px;
+flex-wrap: wrap;
+
+}
+.card{
+    background: rgb(34,193,195);
+    background: linear-gradient(348deg, rgba(34,193,195,1) 0%, rgba(253,177,45,1) 100%);
+}
+    
+
+
+
+
+.card:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 4);
+    transform: translateY(3%);
+    background-color: #c2c1c8;
+}
+
+nav{
+grid-area: nav;
+background-color: rgb(0, 0, 0);
+}
+.dataPodcast1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.imgHerramientas {
+    border-radius: 10px;
+    
+    width: 60%;
+
+}
+.pComunidad{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.imgComunidad {
+
+    border-radius: 10px;
+    width: 60%;
+}
+
+.dataPodcast{
+    background: linear-gradient(348deg, rgba(34,193,195,1) 0%, rgba(253,177,45,1) 100%);
+margin: 10px;
+    
+}
+
+#grilla-contactos{
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: 80px auto auto 1fr;
+    grid-template-areas: 
+    "nav header"
+    "nav main"
+    "nav footer";
+}
+
+.form-edit{
+    width: 50%;
+}
+footer{
+    grid-area: footer;
+   background: rgb(34,193,195);
+    background: linear-gradient(348deg, rgba(34,193,195,1) 0%, rgba(253,177,45,1) 100%);
+}
+.iconosWeb{
+    display: flex;
+    justify-content: center;
+}
+/*comunidad*/
+.infoComunidad{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(348deg, rgba(34,193,195,1) 0%, rgba(253,177,45,1) 100%);
+    width: 75%;
+}
+
+
+/*productos*/
+.card-venta{
+    display: flex;
+    justify-content: center;
+    width: min-content;
+    
+}
+.card-edit{
+    margin: 25px;
+    width: min-content;
+}
+.kit-card{
+    display:flex;
+    flex-direction: row;
+    
+}
+/*contacto*/
+.formulario{
+    background: linear-gradient(348deg, rgba(34,193,195,1) 0%, rgba(253,177,45,1) 100%);
+    margin: 50px;
+    width: 50%;
+    border-radius: 5px;
+}
+.nombres{
+    display: flex;
+    justify-content: space-around;
+margin: 10px;
+padding: 10px;
+}
+
+@media (max-width: 800px){
+#grilla{
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+"header" 
+"nav"
+"main"
+"footer";
+
+}
+ul{
+    display:flex;
+    justify-content: center;
+  
+}
+/*productoss*/
+.card-venta{
+    display: flex;
+    flex-wrap: wrap;
+}
+.kit-card{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mixer-img{
+    width: min-content;
+}
+.kit-card{
+    width: min-content;
+}
+}
+
+
+
+@media (max-width: 400px){
+        #grilla{
+            grid-template-columns: 1fr ;
+            grid-template-areas: 
+        "header" 
+        "nav"
+        "main"
+        "footer";
+        
+        }
+        ul{
+            display:flex;
+            justify-content: center;
+          
+        }
+        /*productoss*/
+        .card-venta{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .kit-card{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .mixer-img{
+            width: min-content;
+        }
+        .kit-card{
+            width: min-content;
+        }
+}
